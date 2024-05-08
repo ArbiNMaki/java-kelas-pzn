@@ -17,5 +17,10 @@ public class TipeDataBukanPrimitif {
         Boolean iniBoolean = true;
         Short iniShort; // null
         iniShort = 100;
+
+        // Konversi dari Tipe Primitif
+        int age = 27;
+        Integer ageObject = age;
+        int ageAgain = ageObject;
     }
 }
