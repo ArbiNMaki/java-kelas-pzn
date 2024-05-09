@@ -22,5 +22,9 @@ public class TipeDataBukanPrimitif {
         int age = 27;
         Integer ageObject = age;
         int ageAgain = ageObject;
+        Integer ageInt = ageAgain;
+
+        short thisShort = ageInt.shortValue();
+        long thisLong = ageInt.longValue();
     }
 }
