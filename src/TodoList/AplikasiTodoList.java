@@ -2,11 +2,13 @@ package TodoList;
 
 public class AplikasiTodoList {
     public static String[] model = new String[10];
+    public static java.util.Scanner scanner = new java.util.Scanner(System.in);
 
     public static void main(String[] args) {
 //        testShowTodoList();
 //        testAddTodoList();
-        testRemoveTodoList();
+//        testRemoveTodoList();
+        testInput();
     }
 
     // Business Logic
@@ -69,6 +71,14 @@ public class AplikasiTodoList {
     }
 
 
+    // Input Data
+    public static String input(String info) {
+        System.out.print(info + " : ");
+        String data = scanner.nextLine();
+        return data;
+    }
+
+
     // View
     public static void viewShowTodoList() {
 
@@ -110,9 +120,18 @@ public class AplikasiTodoList {
         var result = removeTodoList(20);
         System.out.println(result);
 
+        result = removeTodoList(7);
+        System.out.println(result);
+
         result = removeTodoList(2);
         System.out.println(result);
 
         showTodoList();
+    }
+
+    // Test Input
+    public static void testInput() {
+        var name = input("Nama");
+        System.out.println("Hai, " + name);
     }
 }
