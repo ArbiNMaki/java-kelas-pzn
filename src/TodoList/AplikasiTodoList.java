@@ -10,7 +10,8 @@ public class AplikasiTodoList {
 //        testRemoveTodoList();
 //        testInput();
 //        testViewShowTodoList();
-        testViewAddTodoList();
+//        testViewAddTodoList();
+        testViewRemoveTodoList();
     }
 
     // Business Logic
@@ -119,7 +120,18 @@ public class AplikasiTodoList {
     }
 
     public static void viewRemoveTodoList() {
+        System.out.println("===== MENGHAPUS TODO LIST =====");
 
+        var number = input("Nomor yang dihapus (x Jika batal)");
+
+        if(number.equals("x")) {
+            // Batal
+        } else {
+            boolean success = removeTodoList(Integer.valueOf(number));
+            if(!success) {
+                System.out.println("Gagal Hapus todolist: " + number);
+            }
+        }
     }
 
 
@@ -183,6 +195,19 @@ public class AplikasiTodoList {
         addTodoList("Tiga");
 
         viewAddTodoList();
+
+        showTodoList();
+    }
+
+    // Test View Remove todo list
+    public static void testViewRemoveTodoList() {
+        addTodoList("Satu");
+        addTodoList("Dua");
+        addTodoList("Tiga");
+
+        showTodoList();
+
+        viewRemoveTodoList();
 
         showTodoList();
     }
