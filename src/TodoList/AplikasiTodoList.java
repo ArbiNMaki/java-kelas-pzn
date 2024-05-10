@@ -11,7 +11,8 @@ public class AplikasiTodoList {
 //        testInput();
 //        testViewShowTodoList();
 //        testViewAddTodoList();
-        testViewRemoveTodoList();
+//        testViewRemoveTodoList();
+        viewShowTodoList();
     }
 
     // Business Logic
