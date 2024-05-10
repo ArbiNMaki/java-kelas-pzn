@@ -9,7 +9,8 @@ public class AplikasiTodoList {
 //        testAddTodoList();
 //        testRemoveTodoList();
 //        testInput();
-        testViewShowTodoList();
+//        testViewShowTodoList();
+        testViewAddTodoList();
     }
 
     // Business Logic
@@ -106,7 +107,15 @@ public class AplikasiTodoList {
     }
 
     public static void viewAddTodoList() {
+        System.out.println("MENAMBAH TODO LIST");
 
+        var todo = input("Todo (x Jika batal)");
+
+        if(todo.equals("x")) {
+            // Batal
+        } else {
+            addTodoList(todo);
+        }
     }
 
     public static void viewRemoveTodoList() {
@@ -165,5 +174,16 @@ public class AplikasiTodoList {
         addTodoList("Lima");
 
         viewShowTodoList();
+    }
+
+    // Test View Add todo list
+    public static void testViewAddTodoList() {
+        addTodoList("Satu");
+        addTodoList("Dua");
+        addTodoList("Tiga");
+
+        viewAddTodoList();
+
+        showTodoList();
     }
 }
