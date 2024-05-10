@@ -9,7 +9,7 @@ public class PerulanganDoWhile {
             } while (condition;)
         */
 
-        var counter = 100;
+        var counter = 1;
 
         do {
             System.out.println("Perulangan ke-" + counter);
