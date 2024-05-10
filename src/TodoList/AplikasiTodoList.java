@@ -7,24 +7,30 @@ public class AplikasiTodoList {
 
     }
 
-    /*
-        Menampilkan todo list
-     */
+    // Business Logic
+
     public static void showTodoList() {
 
     }
 
-    /*
-        Menambah todo ke list
-     */
     public static void addTodoList() {
 
     }
 
-    /*
-        Menghapus todo dari list
-     */
     public static void removeTodoList() {
+
+    }
+
+    // View
+    public static void viewShowTodoList() {
+
+    }
+
+    public static void viewAddTodoList() {
+
+    }
+
+    public static void viewRemoveTodoList() {
 
     }
 }
