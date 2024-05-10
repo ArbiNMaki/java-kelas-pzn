@@ -8,11 +8,13 @@ public class AplikasiTodoList {
 //        testShowTodoList();
 //        testAddTodoList();
 //        testRemoveTodoList();
-        testInput();
+//        testInput();
+        testViewShowTodoList();
     }
 
     // Business Logic
     public static void showTodoList() {
+        System.out.println("===== TODO LIST =====");
         for(var i = 0; i < model.length; i++) {
             var todo = model[i];
             var number = i + 1;
@@ -81,7 +83,26 @@ public class AplikasiTodoList {
 
     // View
     public static void viewShowTodoList() {
+        while (true) {
+            showTodoList();
 
+            System.out.println("Menu: ");
+            System.out.println("1. Tambah");
+            System.out.println("2. Hapus");
+            System.out.println("x. Keluar");
+
+            var input = input("Pilih");
+
+            if(input.equals("1")) {
+                viewAddTodoList();
+            } else if(input.equals("2")) {
+                viewRemoveTodoList();
+            } else if(input.equals("x")) {
+                break;
+            } else {
+                System.out.println("Pilihan tidak ditemukan!");
+            }
+        }
     }
 
     public static void viewAddTodoList() {
@@ -133,5 +154,16 @@ public class AplikasiTodoList {
     public static void testInput() {
         var name = input("Nama");
         System.out.println("Hai, " + name);
+    }
+
+    // Test View show todo list
+    public static void testViewShowTodoList() {
+        addTodoList("Satu");
+        addTodoList("Dua");
+        addTodoList("Tiga");
+        addTodoList("Empat");
+        addTodoList("Lima");
+
+        viewShowTodoList();
     }
 }
