@@ -14,5 +14,9 @@ public class PersonApp {
 
         person.sayHello("Katsuki");
 
+        var person1 = new Person("Maki", "Tokyo");
+        var person2 = new Person("Maki");
+        var person3 = new Person();
+
     }
 }
