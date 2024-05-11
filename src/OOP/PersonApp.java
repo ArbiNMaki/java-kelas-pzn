@@ -3,9 +3,9 @@ package OOP;
 public class PersonApp {
     public static void main(String[] args) {
 
-        var person = new Person();
-        person.name = "Arbi Dwi Wijaya";
-        person.address = "Malang";
+        var person = new Person("Arbi", "Malang");
+//        person.name = "Arbi Dwi Wijaya";
+//        person.address = "Malang";
 //        person.country = "Tidak Bisa Diubah";
 
         System.out.println(person.name);
