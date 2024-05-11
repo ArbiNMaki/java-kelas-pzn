@@ -17,6 +17,14 @@ public class PolymorphismApp {
     }
 
     static void sayHello(Employee employee) {
-        System.out.println("Hai " + employee.name);
+        if(employee instanceof ViceManager) {
+            ViceManager viceManager = (ViceManager) employee;
+            System.out.println("Hello VM " + viceManager.name);
+        } else if(employee instanceof Manager) {
+            Manager manager = (Manager) employee;
+            System.out.println("Hello Manager " + manager.name);
+        } else {
+            System.out.println("Hello " + employee.name);
+        }
     }
 }
