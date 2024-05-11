@@ -5,9 +5,9 @@ class Person {
     String address;
     final String country = "INDONESIA";
 
-    Person(String paramName, String paramAddress) {
-        name = paramName;
-        address = paramAddress;
+    Person(String name, String address) {
+        this.name = name;
+        this.address = address;
     }
 
     Person(String paramName) {
@@ -18,9 +18,13 @@ class Person {
         this(null);
     }
 
-    void sayHello(String paramName) {
-        System.out.println("Hello " + paramName + ", My Name is " + name);
+    void sayHello() {
+        this.sayHello("Bos");
+    }
+
+    void sayHello(String name) {
+        System.out.println("Hello " + name + ", My Name is " + this.name);
         System.out.println("I Live in " + country);
-        System.out.println("My home address is at " + address);
+        System.out.println("My home address is at " + this.address);
     }
 }
