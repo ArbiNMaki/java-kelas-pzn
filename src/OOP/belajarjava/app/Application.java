@@ -1,6 +1,7 @@
 package OOP.belajarjava.app;
 
-import OOP.belajarjava.data.Product;
+//import OOP.belajarjava.data.Product;
+import OOP.belajarjava.data.*;
 
 public class Application {
     public static void main(String[] args) {
