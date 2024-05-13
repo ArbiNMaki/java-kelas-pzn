@@ -1,5 +1,6 @@
 package OOP.belajarjava.util;
 
+import OOP.belajarjava.error.BlankException;
 import OOP.belajarjava.error.ValidationException;
 import OOP.belajarjava.records.LoginRequest;
 
@@ -13,6 +14,18 @@ public class ValidationUtil {
             throw new NullPointerException("Password tidak boleh null");
         } else if(loginRequest.password().isBlank()) {
             throw new ValidationException("Password tidak boleh kosong");
+        }
+    }
+
+    public static void validateRuntime(LoginRequest loginRequest) {
+        if(loginRequest.username() == null) {
+            throw new BlankException("Username tidak boleh null");
+        } else if(loginRequest.username().isBlank()) {
+            throw new BlankException("Username tidak boleh kosong");
+        } else if(loginRequest.password() == null) {
+            throw new BlankException("Password tidak boleh null");
+        } else if(loginRequest.password().isBlank()) {
+            throw new BlankException("Password tidak boleh kosong");
         }
     }
 }
