@@ -48,4 +48,10 @@ public class Product {
         Product product = (Product) o;
         return price == product.price && Objects.equals(name, product.name);
     }
+
+    public int hashCode() {
+        int result = Objects.hashCode(name);
+        result = 31 * result + price;
+        return result;
+    }
 }
