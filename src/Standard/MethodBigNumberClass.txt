@@ -1,0 +1,8 @@
+Method = Operator
+
+add = +
+subtract = -
+multiply = *
+divide = /
+mod = %
+dll...
