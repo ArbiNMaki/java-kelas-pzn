@@ -1,0 +1,6 @@
+String toLowerCase() = Membuat string baru dengan format lower case.
+String toUpperCase() = --------------------------------- upper case.
+int length() = Mendapatkan panjang string.
+boolean startWith(value) = Mengecek apakah dimulai dengan string value.
+boolean endsWith(value) = Mengecek apakah diakhiri dengan string value.
+String[] split(value) = Memotong string dengan string value.
