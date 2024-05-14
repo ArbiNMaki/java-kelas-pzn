@@ -1,0 +1,6 @@
+byte byteValue() = Mengubah menjadi tipe byte
+double doubleValue() = Mengubah menjadi tipe double
+float floatValue() = Mengubah menjadi tipe float
+int intValue() = Mengubah menjadi int value
+long longValue() = Mengubah menjadi long value
+short shortValue() = Mengubah menjadi short value
