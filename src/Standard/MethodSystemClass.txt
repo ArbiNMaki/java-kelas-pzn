@@ -1,0 +1,6 @@
+String getenv(key) = Mendapatkan environment variable sistem operasi
+void exit(status) = Menghentikan program Java
+long currentTimeMilis() = Mendapatkan waktu saat ini dalam milisecond
+long nanoTime() = Mendapatkan waktu saat ini dalam nanosecond
+void gc() = Menjalankan Java garbage collection
+dll....
