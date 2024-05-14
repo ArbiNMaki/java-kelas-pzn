@@ -1,0 +1,6 @@
+double cos(double) = Menghitung cos di trigonometric
+double sin(double) = Menghitung sin di trigonometric
+double tan(double) = Menghitung tan di trigonometric
+min(number1, number2) = Mengambil nilai terkecil
+max(number1, number2) = Mengambil nilai terbesar
+dll...
