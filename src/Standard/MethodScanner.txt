@@ -1,0 +1,7 @@
+Method = Keterangan
+
+nextLine() = Membaca string
+nextInt() = Membaca int
+nextLong() = Membaca long
+nextBoolean() = Membaca boolean
+dll....
