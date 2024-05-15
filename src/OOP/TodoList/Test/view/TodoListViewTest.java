@@ -29,11 +29,9 @@ public class TodoListViewTest {
         TodoListView todoListView = new TodoListView(todoListService);
 
         todoListView.addTodoList();
-
         todoListService.showTodoList();
 
         todoListView.addTodoList();
-
         todoListService.showTodoList();
     }
 
