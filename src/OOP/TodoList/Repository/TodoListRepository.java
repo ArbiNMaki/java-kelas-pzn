@@ -7,5 +7,5 @@ public interface TodoListRepository {
 
     void add(TodoList todolist);
 
-    void remove(Integer number);
+    boolean remove(Integer number);
 }
