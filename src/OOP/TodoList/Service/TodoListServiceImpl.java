@@ -17,11 +17,11 @@ public class TodoListServiceImpl implements TodoListService {
         System.out.println("===== TODO LIST =====");
 
         for(var i = 0; i < model.length; i++) {
-            var todo = model[i];
+            var todoList = model[i];
             var number = i + 1;
 
-            if(todo != null) {
-                System.out.println(number + ". " + todo);
+            if(todoList != null) {
+                System.out.println(number + ". " + todoList.getTodo());
             }
         }
     }
