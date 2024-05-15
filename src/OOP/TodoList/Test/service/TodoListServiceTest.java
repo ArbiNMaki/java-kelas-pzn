@@ -8,7 +8,7 @@ import OOP.TodoList.Service.TodoListServiceImpl;
 
 public class TodoListServiceTest {
     public static void main(String[] args) {
-        testAddTodoList();
+        testRemoveTodoList();
     }
 
     public static void testShowTodoList() {
@@ -29,6 +29,22 @@ public class TodoListServiceTest {
         todoListService.addTodoList("Belajar Java Basic");
         todoListService.addTodoList("Belajar Java Intermediate");
         todoListService.addTodoList("Belajar Java Advance");
+
+        todoListService.showTodoList();
+    }
+
+    public static void testRemoveTodoList() {
+        TodoListRepository todoListRepository = new TodoListRepositoryImpl();
+        TodoListService todoListService = new TodoListServiceImpl(todoListRepository);
+
+        todoListService.addTodoList("Belajar Java Basic");
+        todoListService.addTodoList("Belajar Java Intermediate");
+        todoListService.addTodoList("Belajar Java Advance");
+
+        todoListService.showTodoList();
+
+        todoListService.removeTodoList(5); // Tidak ada datanya, jadi Gagal
+        todoListService.removeTodoList(2); // Ada datanya. jadi Sukses
 
         todoListService.showTodoList();
     }
