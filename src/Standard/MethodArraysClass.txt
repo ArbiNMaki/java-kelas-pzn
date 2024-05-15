@@ -1,0 +1,6 @@
+binarySearch(array, value) = Mencari value di array
+copyOf(...) = Menyalin data array
+equals(array1, array2) = Membandingkan array1 dan array2
+sort(array) = Mengurutkan array
+toString(array) = Mengembalikan representasi string
+dll...
